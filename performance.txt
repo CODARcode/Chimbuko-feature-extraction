@@ -1,0 +1,25 @@
+{
+	 "Work_flow_performance":{
+	 	 	 "execution_time": 58.8989
+	 	 	 	},
+	 "Detail_of_each_Component":[
+	 	{
+	 	 	 "name” : “heat_transfer.F90",
+	 	 	 "processors": 12,
+	 	 	 "aggr_execution_time": "12:22.279",
+	 	 	 "aggr_communication_time": "11:47.525",
+	 	 	 "idle_time": "11,132"
+	 	 	},
+	 	{
+	 	 	 "name": "stage_write.c",
+	 	 	 "processors": 2,
+	 	 	 "aggr_execution_time": "1:59.244",
+	 	 	 "aggr_communication_time": "1:40.141",
+	 	 	 "idle_time":168
+	 	 	}
+	 ],
+	 "Intra_component_detail":{
+	 	 	 "volume_of_communication": "3.204E+04 x 6",
+	 	 	 "number_of_messages": 6
+	 	 	 	}
+}

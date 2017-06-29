@@ -1,2 +1,2 @@
 # TAU_PROF2JASON
-convert tau profile summary to jason format
+produce jason file for performance metrics using TAU profile summary

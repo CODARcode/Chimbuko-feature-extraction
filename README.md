@@ -29,14 +29,21 @@ string envs[] = [ "TAU_PROFILE=1", "PROFILEDIR=/path to the directory/" ];
 
 
 program1 = "./heat_transfer_adios1";
+
 arguments1 = split("heat  4 3  40 50  6 500", " ");
+
 printf("swift: launching: %s", program1);
+
 exit_code1 = @par=12 launch_envs(program1, arguments1,envs);
+
 printf("swift: received exit code: %d", exit_code1);
+
 if (exit_code1 != 0)
+
 {
   printf("swift: The launched application did not succeed.");
 }
+
 else
 {
  printf("Entering the second Stage----");
@@ -45,11 +52,17 @@ else
 string envs1[]= [ "TAU_PROFILE=1", "PROFILEDIR=/path to the directory/" ];
 
 program2 = "stage_write/stage_write";
+
 arguments2 = split("heat.bp staged.bp FLEXPATH \"\" MPI \"\"", " ");
+
 printf("size: %i", size(arguments2));
+
 printf("swift: launching: %s", program2);
+
 exit_code2 = @par=2 launch_envs(program2, arguments2, envs1);
+
 printf("swift: received exit code: %d", exit_code2);
+
 if (exit_code2 != 0)
 {
   printf("swift: The launched application did not succeed.");

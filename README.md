@@ -74,7 +74,7 @@ else
 
 # Performance Metrics
 ## Overall information
--Total execution time
+- Total execution time
 - Name 
 - Version
 - Code Regions

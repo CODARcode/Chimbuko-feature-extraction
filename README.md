@@ -74,4 +74,26 @@ else
 
 # Performance Metrics
 ## Overall information
+-Total execution time
+- Name 
+- Version
+- Code Regions
+- Call trees
+- Components
+- Input and output files including version, size, location etc.
+## System Architecture Description
+- Name
+- Number of nodes running on 
+- Aggregate time spent computing
+- Aggregate time spent communicating
+- Aggregate time spent idle
+- Execution time per application per node
+- Idle times, per application, per node, per code region
+- Memory usage
+- Programming paradigm
+- Message performance - number, message size, wait time, etc.
+- Interconnect overall performance, over all load, application specific load and performance
+## For each pair of components
+- Aggregate communication volume
+- Total number of messages
 

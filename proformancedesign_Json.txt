@@ -1,2 +1,55 @@
-{	“Work_flow_performance”:{		“total_execution_time”: “seconds”,		“name_of_the_application”: “string”,		“version”: “string”,		“number_code_regins”: “integer”,				“number_call_trees”: “integer”,		“number_components”: “integer”,		“input_file”:{			“name”: “string”,			“version”: “string”,			“size” : “bytes”,			“location_of_the_file”: “string”		}		“output_file”:{			“name”: “string”,			“version”: “string”,			“size” : “bytes”,			“location_of_the_file”: “string”		}	},
-	“system_architecture_description”:{		“type_of_processor”: “string”,		“memory”: “bytes”,		“type_of_interconnect”: “string”,		“type_of_I/O_sub_system”: “string”	},	“detail_of_each_component”: {		“name”: “string”,		“number_of_nodes”: “integer”,		“aggregate_computing_time”: “seconds”,		“aggregate_communication_time” : “seconds”,		“aggregate_idle_time” : “seconds”,		“execution_time_per_application_per_node” : “seconds”,		“idle_time_per_application_per_node” : “seconds”,		“memory_usage”: “bytes”,		“programming_model”: “string”,		“message_performance”: { 		 	“number”: “integer”, 		 	“message_size”: “bytes”, 		 	“execution_time”: “seconds”, 		 	“wait_time” : “seconds”		}		“communication_time” : “seconds”, 		“interconnect_performance” : “string”	},	“For_each_pair_of_components”: {		“aggregate_communication_volume” : “seconds”,		 “total_number_of_messages” : “integer”	}}
+{
+	"Work_flow_performance":{
+		"total_execution_time": "seconds",
+		"name_of_the_application": "string",
+		"version": "string",
+		"number_code_regins": "integer",		
+		"number_call_trees": "integer",
+		"number_components": "integer",
+		"input_file":{
+			"name": "string",
+			"version": "string",
+			"size" : "bytes",
+			"location_of_the_file": "string"
+		}
+		"output_file":{
+			"name": "string",
+			"version": "string",
+			"size" : "bytes",
+			"location_of_the_file": "string"
+		}
+	},
+
+	"system_architecture_description":{
+		"type_of_processor": "string",
+		"memory": "bytes",
+		"type_of_interconnect": "string",
+		"type_of_I/O_sub_system": "string"
+	},
+
+	"detail_of_each_component": {
+		"name√ì: √ístring",
+		"number_of_nodes": "integer",
+		"aggregate_computing_time": "seconds",
+		"aggregate_communication_time" : "seconds",
+		"aggregate_idle_time" : "seconds",
+		"execution_time_per_application_per_node" : "seconds",
+		"idle_time_per_application_per_node" : "seconds",
+		"memory_usage": "bytes",
+		"programming_model": "string",
+		"message_performance": {
+ 		 	"number": "integer",
+ 		 	"message_size": "bytes",
+ 		 	"execution_time": "seconds",
+ 		 	"wait_time" : "seconds"
+		}
+		"communication_time" : "seconds", 
+		"interconnect_performance" : "string"
+	},
+
+	"For_each_pair_of_components": {
+		"aggregate_communication_volume" : "seconds",
+		 "total_number_of_messages" : "integer"
+	}
+
+}

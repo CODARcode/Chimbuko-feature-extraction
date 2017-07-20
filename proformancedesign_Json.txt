@@ -28,7 +28,7 @@
 	},
 
 	"detail_of_each_component": {
-		"nameÓ: Òstring",
+		"name": "string",
 		"number_of_nodes": "integer",
 		"aggregate_computing_time": "seconds",
 		"aggregate_communication_time" : "seconds",

@@ -14,7 +14,7 @@
 	 	 	 "aggr_communication_time": "11:47.525",
 			 // sum of communication/MPI time between processors in minutes:seconds
 	 	 	 "idle_time": "11,132"
-			 // idle time in micro seconds
+			 // total processors' idle time in micro seconds
 	 	 	},
 	 	{
 	 	 	 "name": "stage_write.c",

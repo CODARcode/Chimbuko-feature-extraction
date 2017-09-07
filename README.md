@@ -98,7 +98,9 @@ else
 - Total number of messages
 
 # Python script to extract information
-The script extract the performance metrics.
-feature_extraction2json -o merged.json  [d1] [d2]
+## feature_extraction2json.py
 
-where [d1] & [d2] are the directories containing the TAU profiles.
+The script extract the performance metrics.
+-feature_extraction2json -o merged.json  [d1] [d2]
+
+-where [d1] & [d2] are the directories containing the TAU profiles.

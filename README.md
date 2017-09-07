@@ -100,7 +100,7 @@ else
 # Python script to extract information
 ## feature_extraction2json.py
 
-The script extract the performance metrics.
+The script extracts the performance metrics.
 
 -feature_extraction2json -o merged.json  [d1] [d2]
 

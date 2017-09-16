@@ -30,19 +30,28 @@ where **"program"** is a workflow component, **"arguments"** is the data to be p
 
 ## Example
 // Changes in **workflow.swift** from the Heat Transfer Example
+
 //////////////////////////////////////
+
 // There are two components in the Heat Transfer Workflow.
+
 // Before launching each component, we need to specify
+
 // the TAU options and path to collect the 
+
 // information.
+
 ////////////////////////////////////
 
 import io;
+
 import launch;
+
 import string;
 
 
 // Specifiying the TAU options using envs string for the first component.
+
 **string envs[] = [ "TAU_PROFILE=1", "PROFILEDIR=/path to the directory/" ];**
 
 
@@ -53,6 +62,7 @@ arguments1 = split("heat  4 3  40 50  6 500", " ");
 printf("swift: launching: %s", program1);
 
 // Launching the component using launch_envs
+
 **exit_code1 = @par=12 launch_envs(program1, arguments1,envs);**
 
 printf("swift: received exit code: %d", exit_code1);

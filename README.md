@@ -50,7 +50,7 @@ import launch;
 import string;
 
 
-// Specifiying the TAU options using envs string for the first component.
+// Specifiying the TAU options using the **envs** string for the first component.
 
 **string envs[] = [ "TAU_PROFILE=1", "PROFILEDIR=/path to the directory/" ];**
 
@@ -78,7 +78,9 @@ else
  printf("Entering the second Stage----");
 }
 
-string envs1[]= [ "TAU_PROFILE=1", "PROFILEDIR=/path to the directory/" ];
+// For the second component.
+
+**string envs1[]= [ "TAU_PROFILE=1", "PROFILEDIR=/path to the directory/" ];**
 
 program2 = "stage_write/stage_write";
 
@@ -88,18 +90,25 @@ printf("size: %i", size(arguments2));
 
 printf("swift: launching: %s", program2);
 
-exit_code2 = @par=2 launch_envs(program2, arguments2, envs1);
+**exit_code2 = @par=2 launch_envs(program2, arguments2, envs1);**
 
 printf("swift: received exit code: %d", exit_code2);
 
 if (exit_code2 != 0)
 {
+
   printf("swift: The launched application did not succeed.");
+  
 }
 else
 {
+
         printf(" The workflow is done!!!! ");
+        
 }
+
+
+
 
 # Performance Metrics
 ## Overall information

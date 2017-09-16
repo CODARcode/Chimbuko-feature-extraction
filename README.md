@@ -22,11 +22,11 @@ You need to specify using TAU flags, wheither you need to dump profiles or trace
 
 Consult https://www.cs.uoregon.edu/research/tau/home.php for complete information on various flags and their usages.
 
-In Savanna, you need to initialize a string specifying your options for information and directories where you want to collect it. For this a special API, "launch_envs", has been developed. The API takes three arguments as
+In Savanna, you need to initialize a string specifying your options for information collection. For this purpose a special API, "launch_envs", has been developed. The API takes three arguments as:
 
-launch_envs(program, arguments, envs);
+**launch_envs(program, arguments, envs);**
 
-where "program" is a workflow component, "arguments" are the arguments passed to the components at runtime, and "envs" is the string which specify flags for the program.
+where **"program"** is a workflow component, **"arguments"** is the data to be passed to the component at runtime, and **"envs"** is the string which specify flags for the program.
 
 ## Example
 // Changes in  workflow.swift

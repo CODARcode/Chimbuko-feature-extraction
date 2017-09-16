@@ -29,7 +29,7 @@ In Savanna, you need to initialize a string specifying your options for informat
 where **"program"** is a workflow component, **"arguments"** is the data to be passed to the component at runtime, and **"envs"** is the string which specify flags for the program.
 
 ## Example
-// Changes in  workflow.swift
+// Changes in  the Heat Tranfer workflow.swift
 
 import io;
 import launch;

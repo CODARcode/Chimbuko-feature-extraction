@@ -14,9 +14,15 @@ Produce a JSON file for the performance metrics using the TAU profile summary.
 # Instrumention using TAU
 When linking your executable(s), replace "${ADIOSDIR}/bin/adios_config -l -f” with "tau_cc.sh -tau:showlibs ${ADIOSDIR}/bin/adios_config -l -f” to get both the TAU link flags/libraries as well as the ADIOS flags and libraries.  If replacing in a Makefile, it might look something like this: "$(shell tau_cc.sh -tau:showlibs) $(shell ${ADIOSDIR}/bin/adios_config -l -f)”.  Make sure the TAU libraries are before the ADIOS libraries in the ordering.
 
+Consult https://www.cs.uoregon.edu/research/tau/home.php for more detail. 
+
 
 # Setting up Directories for Dumping Information
+You need to specify using TAU flags, wheither you need to dump profiles or traces. Use "TAU_PROFILE=1" for profiles and "TAU_TRACE=1" for traces. Since in a workflow, there are more than one components using TAU, you need to specify specific directories where you want to dump your profiles/traces from TAU. The TAU infrastructure provides flags for this. Use "PROFILEDIR" to specify the the path to a dirctory for dumping profiles from TAU. Use "TRACEDIR" to specify the path to a directory for  dumping traces from TAU.
 
+Consult https://www.cs.uoregon.edu/research/tau/home.php for complete information on various flags and their usages.
+
+## Example
 // Changes in  workflow.swift
 
 import io;

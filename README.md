@@ -1,15 +1,15 @@
-# TAU_PROF2JASON
-produce jason file for performance metrics using TAU profile summary
+# Chimbuko-feature-extraction
+Produce a JSON file for the performance metrics using the TAU profile summary.
 
 # Building TAU with ADIOS
 
 1.	Build ADIOS 1.12 as usual  (source available at https://github.com/ornladios/ADIOS)
 
-2.	 Configure and build TAU 2.26.2 as usual, adding the -adios=/path/to/adios/installation flag at the configure step (source available at http://tau.uoregon.edu/tau.tgz)
+2.	 Configure and build TAU 2.26.2 (or highier) as usual, adding the -adios=/path/to/adios/installation flag at the configure step (source available at http://tau.uoregon.edu/tau.tgz)
 
 3.	 Add /path/to/tau/$arch/bin to your PATH/path environment variable  (where “/path/to/tau” is your TAU installation location)
 
-4.	 set the TAU_MAKEFILE to the Makefile that matches your TAU configuration, located in /path/to/tau/$arch/lib/Makefile.tau-*
+4.	 Set the TAU_MAKEFILE to the Makefile that matches your TAU configuration, located in /path/to/tau/$arch/lib/Makefile.tau-*
 
 # Instrumention using TAU
 When linking your executable(s), replace "${ADIOSDIR}/bin/adios_config -l -f” with "tau_cc.sh -tau:showlibs ${ADIOSDIR}/bin/adios_config -l -f” to get both the TAU link flags/libraries as well as the ADIOS flags and libraries.  If replacing in a Makefile, it might look something like this: "$(shell tau_cc.sh -tau:showlibs) $(shell ${ADIOSDIR}/bin/adios_config -l -f)”.  Make sure the TAU libraries are before the ADIOS libraries in the ordering.

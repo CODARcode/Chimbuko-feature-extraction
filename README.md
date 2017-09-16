@@ -5,7 +5,7 @@ Produce a JSON file for the performance metrics using the TAU profile summary.
 
 1.	Build ADIOS 1.12 as usual  (source available at https://github.com/ornladios/ADIOS)
 
-2.	 Configure and build TAU 2.26.2 (or highier) as usual, adding the -adios=/path/to/adios/installation flag at the configure step (source available at http://tau.uoregon.edu/tau.tgz)
+2.	 Configure and build TAU 2.26.2 (or highier) as usual. Add the flag -adios=/path/to/adios/installation at the configure step (source available at http://tau.uoregon.edu/tau.tgz) if you want to capture the adios events through TAU.
 
 3.	 Add /path/to/tau/$arch/bin to your PATH/path environment variable  (where “/path/to/tau” is your TAU installation location)
 

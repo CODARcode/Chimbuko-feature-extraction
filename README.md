@@ -29,15 +29,21 @@ In Savanna, you need to initialize a string specifying your options for informat
 where **"program"** is a workflow component, **"arguments"** is the data to be passed to the component at runtime, and **"envs"** is the string which specify flags for the program.
 
 ## Example
-// Changes in  the Heat Tranfer workflow.swift
+// Changes in **workflow.swift** from the Heat Transfer Example
+//////////////////////////////////////
+// There are two components in the Heat Transfer Workflow.
+// Before launching each component, we need to specify
+// the TAU options and path to collect the 
+// information.
+////////////////////////////////////
 
 import io;
 import launch;
 import string;
 
 
-
-string envs[] = [ "TAU_PROFILE=1", "PROFILEDIR=/path to the directory/" ];
+// Specifiying the TAU options using envs string for the first component.
+**string envs[] = [ "TAU_PROFILE=1", "PROFILEDIR=/path to the directory/" ];**
 
 
 program1 = "./heat_transfer_adios1";
@@ -46,7 +52,8 @@ arguments1 = split("heat  4 3  40 50  6 500", " ");
 
 printf("swift: launching: %s", program1);
 
-exit_code1 = @par=12 launch_envs(program1, arguments1,envs);
+// Launching the component using launch_envs
+**exit_code1 = @par=12 launch_envs(program1, arguments1,envs);**
 
 printf("swift: received exit code: %d", exit_code1);
 

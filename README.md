@@ -141,6 +141,6 @@ else
 
 The script extracts the performance metrics.
 
-- **feature_extraction2json -o merged.json  [d1] ..... [dn]**
+- **feature_extraction2json  -o    merged.json     [d1] ..... [dn]**
 
-- where [d1] .... [dn] are the directories containing the TAU profiles.
+- where   [d1] .... [dn] .  are the directories containing the TAU profiles.

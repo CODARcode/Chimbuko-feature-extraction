@@ -116,34 +116,31 @@ else
 
 # Performance Metrics
 ## Overall information
-- Total execution time
 - Name 
 - Version
-- Code Regions
-- Call trees
-- Components
-- Input and output files including version, size, location etc.
-## System Architecture Description
+- Total Execution Time
+## Component level information
 - Name
-- Number of nodes running on 
-- Aggregate time spent computing
-- Aggregate time spent communicating
-- Aggregate time spent idle
-- Execution time per application per node
-- Idle times, per application, per node, per code region
-- Memory usage
-- Programming paradigm
-- Message performance - number, message size, wait time, etc.
-- Interconnect overall performance, over all load, application specific load and performance
-## For each pair of components
-- Aggregate communication volume
-- Total number of messages
+- stat-timestamp
+- end-timestamp
+- local-Time
+- number of processors
+- aggregate communication calls
+- aggregate communication time
+- aggregate adios time
+- aggregate adios bytes
+- aggregate communication collective bytes
+- aggregate communication sent bytes
+- aggregate communication recv bytes
+- aggregate execution time
+- total time
+
 
 # Python script to extract information
 ## feature_extraction2json.py
 
 The script extracts the performance metrics.
 
--feature_extraction2json -o merged.json  [d1] [d2]
+- **feature_extraction2json -o merged.json  [d1] ..... [dn]**
 
--where [d1] & [d2] are the directories containing the TAU profiles.
+- where [d1] .... [dn] are the directories containing the TAU profiles.
